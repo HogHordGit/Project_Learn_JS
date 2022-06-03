@@ -1,22 +1,32 @@
 "use strict";
 
-let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
+// if ("dsad"){
+//     console.log("Ok");
+// } else{
+//     console.log("Error");
+// }
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// if (num < 49) {
+//     console.log("Error");
+// } else if(num > 100) {
+//     console.log("Много");
+// } else {
+//     console.log("Ok");
+// }
 
-let questAboutFilmName = prompt("Один из последних просмотренных фильмов?");
-let questAboutFilmMark = +prompt("На сколько вы его оцените?");
+// (num == 50) ? console.log("Ok!") : console.log("Not Zib");
 
-let questAboutFilmName2 = prompt("Один из последних просмотренных фильмов?");
-let questAboutFilmMark2 = +prompt("На сколько вы его оцените?");
+const num = 45;
 
-personalMovieDB.movies[questAboutFilmName] = questAboutFilmMark;
-personalMovieDB.movies[questAboutFilmName2] = questAboutFilmMark2;
+switch(num){
+    case 50: 
+        console.log("zibert");
+        break;
+    case 49:
+        console.log("Not Zib");
+        break;
+    default: 
+        console.log("Not today");
+        break;
 
-console.log(personalMovieDB);
+}
