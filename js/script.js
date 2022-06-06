@@ -1,32 +1,21 @@
 "use strict";
+ 
+let num = 10;
 
-// if ("dsad"){
-//     console.log("Ok");
-// } else{
-//     console.log("Error");
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
 // }
 
-// if (num < 49) {
-//     console.log("Error");
-// } else if(num > 100) {
-//     console.log("Много");
-// } else {
-//     console.log("Ok");
-// }
+// do {
+//     console.log("zibert");
+//     num++;
+// } while(num < 55);
 
-// (num == 50) ? console.log("Ok!") : console.log("Not Zib");
+for (let i = 0; i < 10; i++) {
 
-const num = 45;
+    if (i % 2 == 0) {continue;}
 
-switch(num){
-    case 50: 
-        console.log("zibert");
-        break;
-    case 49:
-        console.log("Not Zib");
-        break;
-    default: 
-        console.log("Not today");
-        break;
-
+    console.log(i);
+    
 }
