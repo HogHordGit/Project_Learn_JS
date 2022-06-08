@@ -1,31 +1,34 @@
 "use strict";
 
-// let result = "";
-// const lenght = 7;
+let num = 10;
 
-// *
-// **
-// ***
-// ****
-// *****
-// ******
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 20;
+    console.log(num);
+}
 
-// for (let i = 1; i < lenght; i++) {
-//     for (let j = 0; j < i; j++) {
-//         result += "*";
-//     }
-//     result += "\n";
+showFirstMessage("Hello World!");
+console.log(num);
+
+// function calc(a, b) {
+//     return (a + b);
 // }
 
-// console.log(result);
+// console.log(calc(10, 20));
 
-first: for (let i = 1; i < 3; i++) {
-    console.log(`First level: ${i}`);
-    for (let j = 0; j < 3; j++) {
-        console.log(`Second level: ${j}`);
-        for (let k = 0; k < 5; k++) {
-            if (k == 2) break first;
-            console.log(`Third level: ${k}`);
-        }
-    }
+function ret() {
+    let num = 50;
+    return num;
 }
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+const logger = function() {
+    console.log("Hello");
+};
+
+logger();
+
+const calc = (a, b) => {return a + b};
