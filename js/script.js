@@ -1,30 +1,26 @@
 'use strict';
 
-const usdCurr = 28;
-const eurCurr = 32;
-const discount = 0.9;
+const str = "TeSt";
 
-function convert(amount, curr) {
-    return amount * curr;
-}
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
 
-function promotion(result) {
-    console.log(result * discount);
-}
+const fruit = "Some fruit";
 
-const res = convert(500, usdCurr);
-promotion(res);
+console.log(fruit.indexOf("o"));
 
-function test() {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-        if (i === 3) {return}
-    }
-    console.log("Zib");
-}
+const logg = "Hello world I am from Japane, so you have to buy me beer!";
 
-test();
+// console.log(logg.slice(-3, -1));
 
-function doNothing() {}
+// console.log(logg.substring(6, 11));
 
-console.log(doNothing() === undefined);
+// console.log(logg.substr(6, 5));
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
