@@ -1,34 +1,30 @@
-"use strict";
+'use strict';
 
-let num = 10;
+const usdCurr = 28;
+const eurCurr = 32;
+const discount = 0.9;
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 20;
-    console.log(num);
+function convert(amount, curr) {
+    return amount * curr;
 }
 
-showFirstMessage("Hello World!");
-console.log(num);
-
-// function calc(a, b) {
-//     return (a + b);
-// }
-
-// console.log(calc(10, 20));
-
-function ret() {
-    let num = 50;
-    return num;
+function promotion(result) {
+    console.log(result * discount);
 }
 
-const anotherNum = ret();
-console.log(anotherNum);
+const res = convert(500, usdCurr);
+promotion(res);
 
-const logger = function() {
-    console.log("Hello");
-};
+function test() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        if (i === 3) {return}
+    }
+    console.log("Zib");
+}
 
-logger();
+test();
 
-const calc = (a, b) => {return a + b};
+function doNothing() {}
+
+console.log(doNothing() === undefined);
