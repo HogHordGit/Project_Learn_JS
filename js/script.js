@@ -1,28 +1,53 @@
 'use strict';
 
-const str = "TeSt";
+const options = {
+    name: "test",
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: "black",
+        bg: "red"
+    },
+    makeTest: function() {
+        console.log("Test");
+    }
+};
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str);
+options.makeTest();
 
-const fruit = "Some fruit";
+const {border, bg} = options.colors;
+console.log(border);
 
-console.log(fruit.indexOf("o"));
+// console.log(options.name);
 
-const logg = "Hello world I am from Japane, so you have to buy me beer!";
+// delete options.name;
 
-// console.log(logg.slice(-3, -1));
+// console.log(options);
 
-// console.log(logg.substring(6, 11));
+// for (let key in options) {
+//     if (typeof(options[key]) == "object") {
+//         for(let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     }
+// }
 
-// console.log(logg.substr(6, 5));
+// let counter = 0;
 
-const num = 12.2;
-console.log(Math.round(num));
+// for (let key in options) {
+//     counter++;
+// }
 
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+// console.log(counter);
 
-console.log(isNaN("10"));
+// console.log(Object.keys(options).length);
+
+// console.log(options["colors"]["border"]);
+
+
+
+
+
+

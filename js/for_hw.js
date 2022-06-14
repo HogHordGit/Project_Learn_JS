@@ -5,14 +5,14 @@ let flag = true;
 let numberOfFilms;
 
 function start() {
-    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
+    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "").trim();
 
     while(numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
+        numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
     }
 }
 
-// start();
+start();
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -26,13 +26,13 @@ function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
         flag = true;
     
-        const questLastFilm = prompt("Один из последних просмотренных фильмов?");
-        const questMarkFilm = prompt("На сколько оцените его?");
+        const questLastFilm = prompt("Один из последних просмотренных фильмов?", "").trim();
+        const questMarkFilm = +prompt("На сколько оцените его?", "").trim();
     
         if (questLastFilm != null && questMarkFilm != null && questLastFilm != "" && 
         questMarkFilm != "" && questLastFilm.length < 50) {
             personalMovieDB.movies[questLastFilm] = questMarkFilm;
-            console.log("Date has been added");
+            console.log("Data has been added");
         } else {
             console.log("Error with data");
             i--;
@@ -40,7 +40,7 @@ function rememberMyFilms() {
     }
 }
 
-// rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel(count) {
     if (count < 10) {
@@ -67,7 +67,7 @@ function showMyDB(privat) {
 
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
-        personalMovieDB.genres.push(prompt(`Ваш любимый жанр под номером ${i}`));
+        personalMovieDB.genres.push(prompt(`Ваш любимый жанр под номером ${i}`, ""));
     }
 }
 
