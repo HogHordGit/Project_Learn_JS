@@ -136,23 +136,23 @@
 
 //0.30----------------------
 
-let str = "some";
-let strObj = new String(str);
+// let str = "some";
+// let strObj = new String(str);
 
 // console.log(typeof(str));
 // console.log(typeof(strObj));
 
 // console.dir([1, 2, 3]);
 
-const soldier = {
-    health: 400,
-    armor: 100,
-    sayHello: function() {
-        console.log("Hello");
-    }
-};
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log("Hello");
+//     }
+// };
 
-const john = Object.create(soldier); //создаём объект на основе прототипа
+// const john = Object.create(soldier); //создаём объект на основе прототипа
 
 // const john = {
 //     health: 100
@@ -160,7 +160,17 @@ const john = Object.create(soldier); //создаём объект на осно
 
 // john.__proto__ = soldier;
 
-Object.setPrototypeOf(john, soldier);
+// Object.setPrototypeOf(john, soldier);
 
-john.sayHello();
+// john.sayHello();
+
+//0.32----------------------Динамическая типизация
+
+//To String
+// 1)
+console.log(typeof(String(null)));
+console.log(typeof(String(4)));
+
+// 2) Конкатинация
+
 
