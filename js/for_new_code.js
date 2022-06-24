@@ -1,49 +1,49 @@
 "use strict";
 
-//0.32----------------------Динамическая типизация
+// let number = 5; debugger
 
-//To String--------------------------------------------
-// 1)
-console.log(typeof(String(null)));
-console.log(typeof(String(4)));
+// function logNumber() {
+//     console.log(number); debugger
+// }
 
-// 2) Конкатинация
+// number = 6;
 
-console.log(typeof(null + ""));
+// logNumber(); debugger
 
-const num = 5;
+// number = 8;
 
-console.log("https://vk.com/catalog/" + num);
+// logNumber(); debugger
 
-const fontSize = 26 + "px";
+function createCounter() {
+    let counter = 0;
 
-// To Number--------------------------------------------
-// 1)
-console.log(typeof(Number("5")));
+    const myFunction = function() {debugger
+        counter = counter + 1; debugger
+        return counter;debugger
+    };
 
-// 2)
-console.log(typeof(+"5"));
+    return myFunction;
+}
+debugger
+const increment = createCounter();debugger
+const c1 = increment();debugger
+const c2 = increment();debugger
+const c3 = increment();debugger
 
-// 3)
-console.log(typeof(parseInt("5", 10)));
+console.log(c1, c2, c3);
 
-let answer = +prompt("Hello", "");
-
-// To boolean--------------------------------------------
-
-// 0, null, undefined, "", NaN;
-
-// 1)
-let switcher = null;
-
-if (switcher){
-    console.log("Working...");
+{
+    let msg = "Hello";
 }
 
-// 2)
-console.log(typeof(Boolean("5")));
+console.log(msg);
 
-// 3)
-console.log(typeof(!!"444"));
+for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
+        let num = 3;
+    }
 
+    console.log(num);
+}
 
+// Внутри скобок своё лексическое окружение и после выполнения удаляется
