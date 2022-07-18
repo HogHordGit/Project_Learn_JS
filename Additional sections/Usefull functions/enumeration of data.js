@@ -1,26 +1,5 @@
 "use strict";
 
-//41 Рекурсия
-// function pow(a, b) {
-//     let result = 1;
-
-//     for (let i = 0; i < b; i++) {
-//         result *= a;
-//     }
-
-//     return result;
-// }
-
-// function pow(a, b) {
-//     if (b == 1) {
-//         return a;
-//     } else{
-//         return a * pow(a, b-1);
-//     }
-// }
-
-// console.log(pow(5, 3));
-
 let students = {
     js: [{
         name: "John",
@@ -42,14 +21,7 @@ let students = {
         pro: [{
             name: "Sam",
             progress: 10
-        }],
-
-        // semi: {
-        //     students: [{
-        //         name: "Test",
-        //         progress: 100
-        //     }]
-        // }
+        }]
     }
 };
 
@@ -104,4 +76,4 @@ function getTotalProgressByRecurtion(data) {
 
 const result = getTotalProgressByRecurtion(students);
 
-console.log(result[0]/result[1]);
+// console.log(result[0]/result[1]);
