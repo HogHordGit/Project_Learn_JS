@@ -97,10 +97,17 @@
 // // console.log(add);
 // // console.log(clone);
 
+
 // const oldArray = ["a", "b", "c"];
 // const newArray = oldArray.slice();
 
+// console.log(newArray);
+
 // newArray[1] = "aa";
+
+// const oldArray = ["a", "b", "c"];
+// const newArray = Array.from(oldArray);
+
 
 // // console.log(oldArray);
 // // console.log(newArray);
