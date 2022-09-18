@@ -1,0 +1,35 @@
+git remote add origin https://github.com/HogHordGit/Project_Learn_JS.git
+
+
+git status
+git log
+
+git add -A
+git commit -a -m"Add image Cyber Goose"
+
+git push -u origin master
+git push
+
+Чтобы клонировать с GitHub
+
+git clone https://github.com/HogHordGit/Project_Learn_JS.git Learn_JS_project_2
+
+git pull
+
+git config --local user.name "Volodymyr"
+git config --local user.email hoghord@gmail.com
+
+Обновить старый коммит:
+git commit --amend -m"message"
+
+Чтобы вернутся к комиту:
+git checkout код
+
+Чтобы отменить add:
+git reset filename or .
+
+Чтобы отменить commit и вернутся на один назад:
+git reset --hard HEAD^1
+
+Чтобы вернутся на один комит без удаления содержимого:
+git reset --soft HEAD^1
